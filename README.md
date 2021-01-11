@@ -20,7 +20,7 @@ In this repository:
 
 ## Run the script
 1. Reproducing Experiments  
-The script is located in ‘model_comparison_CV’
+The script is located in ‘model_comparison_CV’ folder
 ```bash
 python reproduce.py -mo model_folder_path -da data_folder_path -o output_folder_path
 ```
