@@ -1,6 +1,5 @@
 # xDeep-AcPEP
-
-## xDeep-AcPEP: Explainable Deep Learning Method for Anticancer Peptide Activity Prediction through Convolutional Neural Network and Multi-Task Learning
+## Explainable Deep Learning Method for Anticancer Peptide Activity Prediction through Convolutional Neural Network and Multi-Task Learning
  
 In this repository:
 1. We provide python scripts for reproducing the experiments of 5-folds cross-validation model comparison.
