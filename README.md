@@ -32,6 +32,6 @@ python reproduce.py -mo ./model/ -da ./data/ -o ./
 2. Final production model prediction  
 TBC
 
-
- 
+## References
+1. We used iFeature to extract all peptide features. ([Github](https://github.com/Superzchen/iFeature/), [Paper](https://academic.oup.com/bioinformatics/article-abstract/34/14/2499/4924718))
 
