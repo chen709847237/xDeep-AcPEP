@@ -16,8 +16,7 @@ In this repository:
 * Numpy 1.18.1
 
 ## Data
-1. Models and data used for reproducing experiments are available at:
-TBC
+1. Models and data used for reproducing experiments are available at: [Here](https://drive.google.com/drive/folders/1DXHppIKO0vNqvpGrFAQyqnBodi3dr3fX?usp=sharing)
 2. Final production models for peptide activity prediction are available at:
 TBC
 
