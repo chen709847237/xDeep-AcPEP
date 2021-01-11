@@ -15,21 +15,16 @@ def st_model_prediction(model, val_dataloader):
     val_epoch_batch_count = 0
     val_predict_list = []
     val_target_list = []
-
     for index, (val_x, val_y) in enumerate(val_dataloader):
         val_fea = torch.unsqueeze(val_x, dim=1).float()
         val_target = val_y.float()
-
         with torch.no_grad():
             val_predict = model(val_fea)
-
         val_epoch_batch_count += 1
         val_predict_list.extend(val_predict.data)
         val_target_list.extend(val_target.data)
-
     val_predict_list = np.array([i.item() for i in val_predict_list])
     val_target_list = np.array([i.item() for i in val_target_list])
-
     val_mse = mean_squared_error(val_target_list, val_predict_list)
     val_pcc = pearsonr(val_target_list, val_predict_list)[0]
     val_ktc = kendalltau(val_target_list, val_predict_list)[0]
