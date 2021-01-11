@@ -7,13 +7,10 @@ class ACP_dataset(Dataset):
         self.features = feature_list
         self.label = target_list
         self.set_length = len(self.label)
-
     def __getitem__(self, index):
         fea = self.features[index]
         lab = self.label[index]
-
         return fea, lab
-
     def __len__(self):
         return len(self.features)
 
@@ -26,15 +23,12 @@ class ACP_MT_dataset(Dataset):
             self.mask = mask_list
             self.flag = 1
         self.set_length = len(self.label)
-
     def __getitem__(self, index):
         fea = self.features[index]
         lab = self.label[index]
         if self.flag: msk = self.mask[index]
         else: msk = -1
         return fea, lab, msk
-
-
     def __len__(self):
         return len(self.features)
 
