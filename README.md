@@ -20,7 +20,7 @@ In this repository:
 TBC
 
 ## Run the script
-1. Reproducing Experiments
+1. Reproducing Experiments  
 The script is located in ‘model_comparison_CV’
 ```bash
 python reproduce.py -mo model_folder_path -da data_folder_path -o output_folder_path
@@ -30,7 +30,7 @@ Example:
 python reproduce.py -mo ./model/ -da ./data/ -o ./
 ```
 
-2. Final production model prediction
+2. Final production model prediction  
 TBC
 
 
