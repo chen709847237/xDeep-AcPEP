@@ -16,7 +16,7 @@ In this repository:
 
 ## Data
 1. Models and data used for reproducing experiments are available at: [Here](https://drive.google.com/drive/folders/1DXHppIKO0vNqvpGrFAQyqnBodi3dr3fX?usp=sharing)
-2. Final production models for peptide activity prediction are available at:[TBC.]([Here](https://drive.google.com/drive/folders/1DXHppIKO0vNqvpGrFAQyqnBodi3dr3fX?)
+2. Final production models for peptide activity prediction are available at:[TBC.](https://drive.google.com/drive/folders/1DXHppIKO0vNqvpGrFAQyqnBodi3dr3fX?)
 
 ## Run the script
 1. Reproducing Experiments  
