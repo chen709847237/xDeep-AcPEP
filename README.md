@@ -16,13 +16,13 @@ In this repository:
 
 ## Data
 1. Models and data used for reproducing experiments are available at: [Here](https://drive.google.com/drive/folders/1DXHppIKO0vNqvpGrFAQyqnBodi3dr3fX?usp=sharing)
-2. Final production models for peptide activity prediction are available at:TBC
+2. Final production models for peptide activity prediction are available at:[TBC.]([Here](https://drive.google.com/drive/folders/1DXHppIKO0vNqvpGrFAQyqnBodi3dr3fX?)
 
 ## Run the script
 1. Reproducing Experiments  
 The script is located in ```model_comparison_CV``` folder
 ```bash
-python reproduce.py -mo model_folder_path -da data_folder_path -o output_folder_path
+python reproduce.py -mo <model_folder_path> -da <data_folder_path> -o <output_folder_path>
 ```
 Example:
 ```bash
@@ -30,7 +30,18 @@ python reproduce.py -mo ./model/ -da ./data/ -o ./
 ```
 
 2. Final production model prediction  
-TBC
+The script is located in ```prediction``` folder
+```bash
+python prediction.py -t <tissue_type> -m <model_folder_path> -d <fasta_file_path> -o <output_folder_path>
+```
+where:  
+```<tissue_type>``` could be selected from ```breast```, ```cervix```, ```colon```, ```lung```, ```prostate``` and ```skin```.   
+
+Example:
+```bash
+python prediction.py -t breast -m ./model/ -d ./test_breast.fasta -o ./result/
+```
+
 
 ## References
 1. We used ```iFeature``` to extract all peptide features. ([Github](https://github.com/Superzchen/iFeature/), [Paper](https://academic.oup.com/bioinformatics/article-abstract/34/14/2499/4924718))
