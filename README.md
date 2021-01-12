@@ -19,17 +19,17 @@ In this repository:
 2. Final production models for peptide activity prediction are available at:[TBC.](https://drive.google.com/drive/folders/1DXHppIKO0vNqvpGrFAQyqnBodi3dr3fX?)
 
 ## Run the script
-1. Reproducing Experiments  
+### 1. Reproducing Experiments  
 The script is located in ```model_comparison_CV``` folder
 ```bash
 python reproduce.py -mo <model_folder_path> -da <data_folder_path> -o <output_folder_path>
 ```
-### Example:
+#### Example:
 ```bash
 python reproduce.py -mo ./model/ -da ./data/ -o ./
 ```
 
-2. Final production model prediction  
+### 2. Final production model prediction  
 The script is located in ```prediction``` folder
 ```bash
 python prediction.py -t <tissue_type> -m <model_folder_path> -d <fasta_file_path> -o <output_folder_path>
@@ -37,7 +37,7 @@ python prediction.py -t <tissue_type> -m <model_folder_path> -d <fasta_file_path
 where:  
 ```<tissue_type>``` could be selected from ```breast```, ```cervix```, ```colon```, ```lung```, ```prostate``` and ```skin```.   
 
-### Example:
+#### Example:
 ```bash
 python prediction.py -t breast -m ./model/ -d ./test_breast.fasta -o ./result/
 ```
