@@ -24,7 +24,7 @@ The script is located in ```model_comparison_CV``` folder
 ```bash
 python reproduce.py -mo <model_folder_path> -da <data_folder_path> -o <output_folder_path>
 ```
-Example:
+### Example:
 ```bash
 python reproduce.py -mo ./model/ -da ./data/ -o ./
 ```
@@ -37,7 +37,7 @@ python prediction.py -t <tissue_type> -m <model_folder_path> -d <fasta_file_path
 where:  
 ```<tissue_type>``` could be selected from ```breast```, ```cervix```, ```colon```, ```lung```, ```prostate``` and ```skin```.   
 
-Example:
+### Example:
 ```bash
 python prediction.py -t breast -m ./model/ -d ./test_breast.fasta -o ./result/
 ```
