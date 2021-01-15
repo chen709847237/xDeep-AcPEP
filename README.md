@@ -14,9 +14,9 @@ In this repository:
 * Pandas 1.0.2 
 * Numpy 1.18.1
 
-## Data
+## Model and Data
 1. Models and data used for reproducing experiments are available at: [Here](https://drive.google.com/drive/folders/1DXHppIKO0vNqvpGrFAQyqnBodi3dr3fX?usp=sharing)
-2. Final production models for peptide activity prediction are available at:```<tissue_type>```
+2. Final production models for peptide activity prediction are available at: ```./prediction/model/```
 
 ## Run the script
 ### 1. Reproducing Experiments  
