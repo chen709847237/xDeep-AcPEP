@@ -9,6 +9,9 @@ from sklearn.metrics import mean_squared_error
 from scipy.stats import pearsonr, kendalltau
 from data_layer import ACP_MT_dataset, ACP_dataset
 from argparse import ArgumentParser
+from openpyxl import Workbook
+from openpyxl.utils.dataframe import dataframe_to_rows
+
 
 def st_model_prediction(model, val_dataloader):
     model.eval()
@@ -122,7 +125,12 @@ if __name__ == '__main__':
     result_df = pd.DataFrame({'tissue': tissue_result_list, 'model': model_name_result_list,
                               'mse': mse_result_list, 'pcc': pcc_result_list, 'ktc': ktc_result_list})
     result_df = result_df[['tissue', 'model', 'mse', 'pcc', 'ktc']]
-    result_df.to_csv(output_root_path + 'model_cv_result.csv', index=False)
+    result_df.sort_values('model', inplace=True)
+    wb = Workbook()
+    ws = wb.active
+    for r in dataframe_to_rows(result_df, index=False, header=True):
+        ws.append(r)
+    wb.save(output_root_path + 'model_cv_result.xlsx')
 
 
 
