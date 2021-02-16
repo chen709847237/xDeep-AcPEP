@@ -42,7 +42,7 @@ where:
 ```bash
 python prediction.py -t breast -m ./model/ -d ./test_breast.fasta -o ./result/
 ```
-**Note: The input peptide data must in the form of FASTA format.**
+**Note: The input peptide data must in the form of the following FASTA format.**
 ```bash
 >AmphiArc1
 KWVKKVHNWLRRWIKVFEALFG
