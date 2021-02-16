@@ -42,8 +42,17 @@ where:
 ```bash
 python prediction.py -t breast -m ./model/ -d ./test_breast.fasta -o ./result/
 ```
-
-
+Note: The input peptide data must in the form of FASTA format.
+```bash
+>AmphiArc1
+KWVKKVHNWLRRWIKVFEALFG
+>AmphiArc2
+KIFKKFKTIIKKVWRIFGRF
+>Gradient2
+AWLKRIKKFLKALFWVWVW 
+>AmphiArc3
+AFRHSVKEELNYIRRRLERFPNRL
+```
 ## References
 1. We used ```iFeature``` to extract all peptide features. ([Github](https://github.com/Superzchen/iFeature/), [Paper](https://academic.oup.com/bioinformatics/article-abstract/34/14/2499/4924718))
 
