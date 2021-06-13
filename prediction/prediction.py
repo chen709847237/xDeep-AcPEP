@@ -50,7 +50,7 @@ def prediction(tissue_type, ad_param, temp_fea_file, model_path, result_root_fol
             result_ori = np.array([math.pow(10, -i) * 1000 * 1000 for i in np.array(q_pre_list)[:, map_dict[tissue_type]]])
             result_df[tissue_type + '_pre'] = result_ori
         
-        result_df.to_csv(result_root_folder + 'result_'+data_file_name + '.csv', index=False)
+            result_df.to_csv(result_root_folder + 'result_'+data_file_name + '.csv', index=False)
             print('PREDICTION OVER!')
             print('result save at ', result_root_folder)
             print('Total time: %.2f' % (time.time() - begin) + 's')
