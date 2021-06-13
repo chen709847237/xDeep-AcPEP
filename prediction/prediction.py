@@ -46,10 +46,8 @@ def prediction(tissue_type, ad_param, temp_fea_file, model_path, result_root_fol
                 q_pre_list.extend(q_predict.data.numpy())
                 q_id_list.extend(q_id)
             result_df[tissue_type+'_idx'] = np.array(q_id_list)
-            #result_df[tissue_type+'_pre'] = np.array(q_pre_list)[:, map_dict[tissue_type]]
             result_ori = np.array([math.pow(10, -i) * 1000 * 1000 for i in np.array(q_pre_list)[:, map_dict[tissue_type]]])
             result_df[tissue_type + '_pre'] = result_ori
-        
             result_df.to_csv(result_root_folder + 'result_'+data_file_name + '.csv', index=False)
             print('PREDICTION OVER!')
             print('result save at ', result_root_folder)
