@@ -5,15 +5,11 @@ from iFeature.codes.AAINDEX import *
 from iFeature.codes.BLOSUM62 import *
 from iFeature.codes.ZSCALE import *
 
-def feature_generator(file_path, temp_file_path, verbose=50):
+def feature_generator(file_path, temp_file_path):
     f = open(file_path, 'r', encoding='utf-8')
     fasta_list = np.array(f.readlines())
     aa_feature_list = []
-    print(len(fasta_list)/2)
-    print('Feature Generating...')
     for flag in range(0, len(fasta_list), 2):
-        if flag % verbose == 0:
-            print(flag//2)
         fasta_str = [[fasta_list[flag].strip('\n').strip(), fasta_list[flag + 1].strip('\n').strip()]]
         bin_output = BINARY(fasta_str)
         aai_output = AAINDEX(fasta_str)

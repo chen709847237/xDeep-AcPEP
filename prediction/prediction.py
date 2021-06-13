@@ -74,7 +74,7 @@ if __name__ == '__main__':
     temp_fea_file = result_root_folder + '.temp_fea_' + fasta_data_file.split('/')[-1]
     ad_define_file = model_path + 'ad_define.npy'
     ad_data = np.load(ad_define_file, allow_pickle=True).item()
-    temp_fea_file = feature_generator(fasta_data_file, temp_fea_file, verbose=50)
+    temp_fea_file = feature_generator(fasta_data_file, temp_fea_file)
     prediction(tissue_type, ad_data, temp_fea_file, model_path, result_root_folder, fasta_data_file.split('/')[-1])
     print('prediction all over!!!')
 
