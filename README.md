@@ -1,6 +1,6 @@
 # xDeep-AcPEP
 ## Deep Learning Method for Anticancer Peptide Activity Prediction through Convolutional Neural Network and Multi-Task Learning
- 
+## :fire:UPDATE(2021.7.12): The online server for xDeep-AcPEP is now available: [Here](https://app.cbbio.online/acpep/home)
 In this repository:
 1. We provide python scripts for reproducing the experiments of 5-folds cross-validation model comparison.
 2. We provide our final production models for peptide activity prediction.
