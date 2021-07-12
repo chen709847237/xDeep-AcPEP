@@ -30,7 +30,7 @@ python reproduce.py -mo <model_folder_path> -da <data_folder_path> -o <output_fo
 python reproduce.py -mo ./model/ -da ./data/ -o ./
 ```
 
-### 2. Final production model prediction [Online Server](https://app.cbbio.online/acpep/home)
+### 2. Final production model prediction ([Online Server](https://app.cbbio.online/acpep/home))
 The script is located in ```prediction``` folder
 ```bash
 python prediction.py -t <tissue_type> -m <model_folder_path> -d <fasta_file_path> -o <output_folder_path>
